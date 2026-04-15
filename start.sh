@@ -28,7 +28,7 @@ cp $ssl_cert ${DOMAIN}.crt
 cp $ssl_key ${DOMAIN}.key
 sed -i "s/gophish_admin.crt/${DOMAIN}.crt/g" config.json
 sed -i "s/gophish_admin.key/${DOMAIN}.key/g" config.json
-sed -i 's/"use_tls" : false/"use_tls" : true/g' config.json
+sed -i 's/"use_tls": false/"use_tls" : true/g' config.json
 sed -i "s/example.crt/${DOMAIN}.crt/g" config.json
 sed -i "s/example.key/${DOMAIN}.key/g" config.json
 ./gophish
